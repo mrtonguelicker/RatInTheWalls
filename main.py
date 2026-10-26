@@ -78,7 +78,7 @@ def parse_command(input):
     action = words[0]
     target = " " 
 
-    # takes "words", and joins everything except the first word in a string called "action"
+    # takes "words", and joins everything except the first word in a string called "target"
     if len(words) > 1: 
         target.join(words[1:])
     else: 
