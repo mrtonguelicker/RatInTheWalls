@@ -69,10 +69,22 @@ class Player:
 
     
 def parse_command(input): 
+    # action = first word, everything else is what the action should be directed towards
+    words = input.strip().lower().split()
 
-    """
-    Parse user input into actions and targets, maybe through tuples?
-    """
+    if not words: 
+        return(None, None)
+
+    action = words[0]
+    target = " " 
+
+    # takes "words", and joins everything except the first word in a string called "action"
+    if len(words) > 1: 
+        target.join(words[1:])
+    else: 
+        target = None
+    
+    return (action, target)
 
 def game_loop(): 
     # main game loop
@@ -94,4 +106,3 @@ def game_loop():
 
 def main():
     return
-
