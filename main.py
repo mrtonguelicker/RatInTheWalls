@@ -105,4 +105,17 @@ def game_loop():
         return 
 
 def main():
+    # start of the game and get player name
+
+    name = input ("Enter your name, adventurer: ")
+    if not name: 
+        name = "Adventurer"
+    name_stripped = name.strip()
+
+    player = Player(name_stripped)
+    print(f"\nWelcome, {player.name}. You feel the walls watching you...")
+
+    # start game loop 
+    # game_loop(player)
+     
     return
