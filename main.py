@@ -59,8 +59,13 @@ class Player:
         if not self.inventory: 
             print ("Get a job, you got nothing right now.") ##Change before merging into main
         else: 
+            # prints out the inventory as a list if its not empty
+
             print ("Inventory: ")
-            ## add a loop to iterate over inventory list
+            count = 1 
+            for i in self.inventory: 
+                print(f" {count}.{i}")
+                count += 1
 
     def __str__(self): 
         # return what the player is
