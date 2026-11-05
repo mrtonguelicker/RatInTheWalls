@@ -35,7 +35,7 @@ These are the inupts that the will be dewsigned to handle and process (final pro
 | combat | Pragyay | Combat (player, enemy_type), combat loop, calculating damage |
 | rooms | Imim | Room class (descriptions, connectios, items, enemies), room creation and links |
 | items | Marce | Item class (name, type, what it does), item creations, item function, healing and weapon logic |
-| enemies | Francheska | Enemey class (name, health, attack, defense, ASCII art), similar to Player class
+| enemies | Francheska | Enemy class (name, health, attack, defense, ASCII art), similar to Player class
 | test_game | Shared | pytests for Player, Room, Item, Enemy, combat and command parsing |
 | | | |
 
